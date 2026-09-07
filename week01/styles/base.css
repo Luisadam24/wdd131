@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comic Relief", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: white;
+}
+
+header {
+    background-color: darkslategray;
+    color: white;
+}
+
+#course-title {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 12px;
+}
+
+header nav {
+    background-color: green;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav li {
+    flex: 1;
+    text-align: center;
+}
+
+header nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+header nav a:hover {
+    background-color: #555;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+main h1 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+    font-family: "Comic Relief", Arial, sans-serif;
+    font-weight: 700;
+}
+
+main .card:first-of-type {
+    grid-column: 1;
+}
+
+main .card:nth-of-type(2) {
+    grid-column: 2;
+}
+
+.card {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.card h2 {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+}
+
+.card p {
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.card img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+.map {
+    width: 100%;
+    padding: 15px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.card nav ul {
+    padding: 20px 40px;
+}
+
+.card nav li {
+    margin-bottom: 5px;
+}
+
+.card a {
+    color: #0645ad;
+}
+
+.card a:hover {
+    color: #c00;
+}
+
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 3px;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        width: 100%;
+    }
+
+    main {
+        padding: 15px;
+        display: block;
+    }
+
+    .card img {
+        width: 150px;
+    }
+
+    .map iframe {
+        height: 250px;
+    }
+}
