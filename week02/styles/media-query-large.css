@@ -1,0 +1,11 @@
+@media (min-width: 500px) {
+    header {
+        background: black;
+        color: #fff;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
