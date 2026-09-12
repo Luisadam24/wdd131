@@ -1,0 +1,25 @@
+@media (min-width: 700px) {
+    header {
+        background-color: green;
+        color: #fff;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main h1 {
+        grid-column: 1 / -1;
+    }
+}
