@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Adam">
+    <meta name="description"
+        content="An exercise og how to display images on different screens setting them to different sizes. It's not a big deal. We are learning Web Development">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive Images</title>
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/apia-samoa-temple-lds-hero-large.webp" media="(min-width: 1500px)">
+                <source srcset="images/apia-samoa-temple-lds-hero-medium.webp" media="(min-width: 1000px)">
+                <img src="images/apia-samoa-temple-lds-hero-small.webp" alt="Samoa Temple" width="500" height="250">
+            </picture>
+
+        </div>
+    </main>
+</body>
+
+</html>
