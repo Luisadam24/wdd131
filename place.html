@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Luis Adam">
+    <meta name="description"
+        content="Information about Zimbabwe including population, capital, languages, currency, time zone, and weather.">
+
+    <title>Zimbabwe | Place</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Zimbabwe</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+                <source media="(min-width: 700px)" srcset="images/victoria-falls-large.webp">
+                <img src="images/victoria-falls-small.webp" alt="Victoria Falls in Zimbabwe">
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+
+                <p>
+                    <span>Area:</span>
+                    390,757 sq km
+                </p>
+
+                <p>
+                    <span>Population:</span>
+                    16,665,409
+                </p>
+
+                <p>
+                    <span>Capital:</span>
+                    Harare
+                </p>
+
+                <p>
+                    <span>Languages:</span>
+                    English, Shona, Ndebele
+                </p>
+
+                <p>
+                    <span>Currency:</span>
+                    Zimbabwe Gold (ZiG)
+                </p>
+
+                <p>
+                    <span>Time Zone:</span>
+                    UTC+2
+                </p>
+
+                <p>
+                    <span>Calling Code:</span>
+                    +263
+                </p>
+
+                <p>
+                    <span>Internet TLD:</span>
+                    .zw
+                </p>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+
+                <img class="weather-icon" src="images/partly-cloudy.svg" alt="Partly cloudy weather" width="70"
+                    height="70">
+
+                <p>
+                    <span>Temperature:</span>
+                    <span id="temperature">8</span> °C
+                </p>
+
+                <p>
+                    <span>Conditions:</span>
+                    Partly Cloudy
+                </p>
+
+                <p>
+                    <span>Wind:</span>
+                    <span id="wind-speed">12</span> km/h
+                </p>
+
+                <p>
+                    <span>Wind Chill:</span>
+                    <span id="wind-chill">N/A</span>
+                </p>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Luis Adam | Zimbabwe
+        </p>
+
+        <p>
+            Last Modified:
+            <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
