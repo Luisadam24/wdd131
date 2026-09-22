@@ -1,0 +1,15 @@
+img {
+    display: block;
+    object-fit: fill;
+    animation: fadeFromBlack 2s ease-in-out;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
