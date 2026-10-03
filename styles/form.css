@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: whitesmoke;
+    color: black;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+form,
+.confirmation {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px gray;
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+form>label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    margin-top: 1.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.7rem 0;
+    font-weight: normal;
+}
+
+.rating {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+.rating label {
+    font-weight: normal;
+}
+
+.rating input {
+    margin-left: -0.7rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+.confirmation {
+    text-align: center;
+}
+
+.confirmation h2 {
+    color: navy;
+}
+
+@media (min-width: 700px) {
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
