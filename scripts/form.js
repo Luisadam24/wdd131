@@ -28,16 +28,37 @@ const products = [
 
 const productSelect = document.querySelector("#productName");
 
-products.forEach((product) => {
-    const option = document.createElement("option");
+if (productSelect) {
+    products.forEach((product) => {
+        const option = document.createElement("option");
 
-    option.value = product.id;
-    option.textContent = product.name;
+        option.value = product.id;
+        option.textContent = product.name;
 
-    productSelect.appendChild(option);
-});
+        productSelect.appendChild(option);
+    });
+}
 
-document.querySelector("#currentyear").textContent = new Date().getFullYear();
+const currentYear = document.querySelector("#currentyear");
 
-document.querySelector("#lastModified").textContent =
-    `Last Modification: ${document.lastModified}`;
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+const lastModified = document.querySelector("#lastModified");
+
+if (lastModified) {
+    lastModified.textContent = `Last Modification: ${document.lastModified}`;
+}
+
+const reviewCount = document.querySelector("#reviewCount");
+
+if (reviewCount) {
+    let count = Number(localStorage.getItem("reviewCount")) || 0;
+
+    count++;
+
+    localStorage.setItem("reviewCount", count);
+
+    reviewCount.textContent = count;
+}
