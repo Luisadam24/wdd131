@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <script src="scripts/rafting.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Adam">
+    <meta name="description" content="Contact our rafting team to ask questions, book your adventure, or get help planning your next whitewater rafting experience.">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+    <img src="images/logo.jpeg" alt="White Water Rafting logo showing stylized river and paddle brand mark">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="trips.html">Trips</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+<main>
+    <h1>Contact Us</h1>
+
+
+       <h2>Our Information</h2>
+    <div class="address">
+    <p>White Water Rafting</p>
+    <p>Address: 24 Bvumavaranda Road</p>
+    <p>City: Harare, Zimbabwe</p>
+    <p>Phone: +263787272320</p>
+    <p>Email: <a href="adamusky24gmail.com">adamusky-water-raft</a></p>
+    </div>
+        <section class="contact-container">
+
+    <div class="map location-card">
+        <h2>Visit Us</h2>
+        <p>24 Bvumavaranda Road</p>
+        <p>Harare, Zimbabwe</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=24+Bvumavaranda+Road+Harare+Zimbabwe" target="_blank"
+            rel="noopener noreferrer">
+            Get Directions
+        </a>
+    </div>
+
+    <!-- Contact Form -->
+    <form>
+
+        <!-- Name -->
+        <fieldset>
+            <div class="form-item column2">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="user-name" required>
+            </div>
+        </fieldset>
+
+        <!-- Email -->
+        <fieldset>
+            <div class="form-item column2">
+                <label for="user-email">Email</label>
+                <input
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="adamusky24@gmail.com"
+                    required>
+            </div>
+        </fieldset>
+
+        <!-- Message Purpose -->
+        <fieldset>
+            <legend>Message Purpose</legend>
+
+            <div class="radio-option">
+            <input type="radio" id="general" name="purpose" value="General Inquiry">
+            <label for="general">General Inquiry</label>
+            </div>
+
+            <div class="radio-option">
+            <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+            <label for="reservation">Reservation Question</label>
+            </div>
+
+            <div class="radio-option">
+            <input type="radio" id="website" name="purpose" value="Website Suggestion">
+            <label for="website">Website Suggestion</label>
+            </div>
+        </fieldset>
+
+        <!-- Message -->
+        <fieldset>
+            <div class="form-item column2">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+        </fieldset>
+
+        <!-- Newsletter -->
+        <fieldset>
+            <div class="form-item column1">
+                <input type="checkbox" id="subscription" name="subscription">
+                <label for="subscription">
+                    Please subscribe me to the monthly newsletter
+                </label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Get in Touch!</button>
+
+    </form>
+
+</section>
+<section class="employees">
+    <h2>We Are Here To Serve You</h2>
+
+    <figure>
+        <img src="images/employee-1.jpg" alt="John Moffat, River Guide">
+        <figcaption>John Moffat - Senior River Guide</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/employee-3.jpg" alt="James Mcgregor, Safety Instructor" loading="lazy">
+        <figcaption>James Mcgregor - Safety Instructor</figcaption>
+    </figure>
+
+    <figure>
+        <img src="images/employee-4.jpg" alt="Rutendo Muwungani, Trip Coordinator" loading="lazy">
+        <figcaption>Rutendo Muwungani - Trip Coordinator</figcaption>
+    </figure>
+</section>
+</main>   
+<footer>
+    <p>© 2026 White Water Rafting: Sir Luis Adam</p>
+    <nav class="socialmedia">
+        <a href="https://instagram.com">
+            <img src="images/instagram-bw.svg" width="20" alt="Instagram icon black and white link to company social profile">
+        </a>
+        <a href="https://facebook.com">
+            <img src="images/facebook-bw.svg" width="20" alt="Facebook icon black and white link to company social profile">
+        </a>
+        <a href="https://x.com">
+            <img src="images/x-bw.svg" width="20" alt="X platform icon black and white link to company social profile">
+        </a>
+    </nav>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
